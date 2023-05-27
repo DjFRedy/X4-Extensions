@@ -1,2 +1,2 @@
-# X4-Foundations
+# X4-Extensions
 Mods, utilities, for X4: Foundations.
