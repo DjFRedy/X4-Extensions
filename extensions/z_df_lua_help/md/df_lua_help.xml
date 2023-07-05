@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="LuaHelp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+	<cues>
+
+		<cue name="StartLuaHelp">
+			<conditions>
+				<event_cue_signalled cue="md.Setup.Start"/>
+			</conditions>
+			<actions>
+				<set_value name="$DebugChance" exact="0"/>
+
+				<debug_text text="'Start Lua Mod'" chance="$DebugChance"/>
+			</actions>
+			<cues>
+
+				<cue name="StringToNumber" instantiate="true">
+					<conditions>
+						<event_cue_signalled/>
+					</conditions>
+					<actions>
+						<raise_lua_event name="'convertStringToNumber'" param="event.param"/>
+					</actions>
+				</cue>
+
+				<cue name="SpeakShipName" instantiate="true">
+					<conditions>
+						<event_ui_triggered screen="'my_screen'" control="'my_control'"/>
+					</conditions>
+					<actions>
+						<debug_text text="'speakline: ' + event.param3" chance="$DebugChance"/>
+						<set_value name="$speakline" exact="event.param3"/>
+						<speak actor="player.computer" page="20101" line="$speakline" priority="100"/>
+					</actions>
+				</cue>
+
+			</cues>
+		</cue>
+
+	</cues>
+</mdscript>

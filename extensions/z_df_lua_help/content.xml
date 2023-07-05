@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content id="z_df_lua_help" name="DF Lua Help" description="Lua Help." author="Dj_FRedy" version="100" date="2021-07-05" save="0" enabled="1">
+	<text language="7" name="DF Lua Help" description="Lua Help."/>
+	<text language="33" name="DF Lua Help" description="Lua Help."/>
+	<text language="34" name="DF Lua Help" description="Lua Help."/>
+	<text language="39" name="DF Lua Help" description="Lua Help."/>
+	<text language="38" name="DF Lua Help" description="Lua Help."/>
+	<text language="49" name="DF Lua Help" description="Lua Help."/>
+	<text language="55" name="DF Lua Help" description="Lua Help."/>
+	<text language="81" name="DF Lua Help" description="Lua Help."/>
+	<text language="82" name="DF Lua Help" description="Lua Help."/>
+	<text language="86" name="DF Lua Help" description="Lua Help."/>
+	<text language="88" name="DF Lua Help" description="Lua Help."/>
+
+	<dependency id="ws_2042901274" version="188" optional="false" name="SirNukes Mod Support APIs"/>
+</content>
